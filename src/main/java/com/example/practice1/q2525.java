@@ -9,6 +9,16 @@ public class q2525 {
         int B = sc.nextInt();
         int C = sc.nextInt();
 
+        int hour = A + (B+C) / 60;
+        int minute = (B+C) % 60;
+
+        // 시가 24 시를 초과하면 0 시로 조정
+        if (hour >= 24) {
+            hour -= 24;
+        }
+
+        System.out.println(hour + " " + minute);
+
     }
 }
 //    KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간편하게 만드는 인공지능 오븐을 개발하려고 한다. 인공지능 오븐을 사용하는 방법은 적당한 양의 오리 훈제 재료를 인공지능 오븐에 넣으면 된다. 그러면 인공지능 오븐은 오븐구이가 끝나는 시간을 분 단위로 자동적으로 계산한다.
